@@ -1,37 +1,202 @@
-*{
-    max-width: 1440px;
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-montserrat: Montserrat;
+  --font-poppins: Poppins;
 }
+
+* {
+  margin: 0;
+}
+
+/*NAVBAR E SLOGAN*/
 header {
-    width: 100%;
-    height: 490px;
-    background-image: url("/img/navio-fundo.png");
-    background-color: #0f3d4c;
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: auto;
+  height: 465px;
+  background-image: url("/img/navio-fundo.png");
+  background-color: #0f3d4c;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  display: flex;
+}
+
+.navbar-container .navbar-logo img {
+  height: 60px;
+  width: 200px;
+}
+
+.slogan {
+  position: relative;
+  height: 200px;
+}
+.slogan h1 {
+  color: #fff;
+  font-family: var(--font-poppins);
+  font-size: 42px;
+  font-weight: 200;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+
+.slogan h2 {
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  font-weight: 100;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+}
+
+.nav-bar img {
+  height: 50px;
+  width: 510px;
+}
+
+/*BOTÃO DO INICIO*/
+
+.btn-container__0 {
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0px;
+    
+  }
+  
+  .btn__0 {
+    color: #ccc;
+    background-color: #0f3d4c;
+    border-radius: 100px;
+    padding: 9px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--font-inter);
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .btn__0:hover {
+    border:1px solid #1aa912;
+    color: #1aa912;
+  }
+  
+  .btn-container__0 .btn__0 img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+/*CARDS*/
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
 }
 
-.navbar-container .navbar-logo img {
-    height: 60px;
-    width: 200px;
+.card {
+  width: 450px;
+  height: 800px;
+  background-color: rgba(7, 47, 59, 0.6);
 }
 
-.slogan {
-    position: relative;
-    height: 200px;
+.card-title {
+  color: #fff;
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 200;
+  padding: 1em;
 }
-.slogan h1 {
-    color: #fff;
-    font-family: var(--font-poppins);
-    position: absolute;
-    top: 40%;
-    left:25%
+
+.img_card1 {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
 }
+
+.img_card2 {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.paragraph {
+  color: #fff;
+  font-family: var(--font-inter);
+  font-size: 22px;
+  font-weight: 100;
+  text-align: justify;
+  padding: 1em;
+}
+
+/*BOTÃO*/
+.content {
+  height: 1000px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/content-img.png");
+  background-position: top;
+  background-size: cover;
+  background-color: #0f3d4c;
+}
+
+.btn-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 3em;
+  width: 600px;
+  height: 100px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.btn {
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  padding: 9px 100px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-family: var(--font-inter);
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.btn:hover {
+  border-color: #1aa912;
+  color: #1aa912;
+}
+
+.btn-container .btn img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+/*FOOTER*/
