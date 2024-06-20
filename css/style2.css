@@ -1,0 +1,117 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-montserrat: Montserrat;
+    --font-poppins: Poppins;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url('/img/NordesteContabilidade-Formulário.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: var(--font-inter);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .contact-info, .contact-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #136988;
+    color: #FFF;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .section-title {
+    margin-bottom: 20px;
+    font-family: var(--font-poppins);
+  }
+  
+  .btn-container__0 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn__0 {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--font-inter);
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .btn__0:hover {
+    border: 1px solid #1aa912;
+    color: #1aa912;
+  }
+  
+  .btn-container__0 .btn__0 img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: var(--font-montserrat);
+  }
+  
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(204, 204, 204, 0.50);
+    color: #000;
+    font-family: var(--font-inter);
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1aa912;
+    color: #fff;
+    font-family: var(--font-inter);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #136988;
+  }
+  
