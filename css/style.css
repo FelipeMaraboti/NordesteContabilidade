@@ -13,7 +13,7 @@
 header {
   width: auto;
   height: 465px;
-  background-image: url("/img/navio-fundo.png");
+  background-image: url("../img/navio-fundo.png");
   background-color: #0f3d4c;
   background-position: top;
   background-size: cover;
