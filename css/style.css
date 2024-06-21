@@ -7,6 +7,8 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*NAVBAR*/
@@ -18,7 +20,6 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .navbar-container {
@@ -26,24 +27,29 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   background-color: #0f3d4c;
   width: auto;
   height: 80px;
 }
 
-.navbar-container .navbar-logo img {
+.navbar-logo {
+  flex-grow: 1;
+  margin-left: 95px;
+  margin-top: 20px;
+}
+
+.navbar-logo img {
   height: 40px;
   width: 140px;
 }
 
-
 /* Navbar items */
-
 .navbar-container ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-left: auto;
+  margin-right: 150px;
 }
 
 .navbar-container ul .navbar-items {
@@ -94,42 +100,42 @@ header {
 /*BOTÃO DO INICIO*/
 
 .btn-container__0 {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 70px;
-    margin-left: 65px;
-  }
-  
-  .btn__0 {
-    background-color: #136988;
-    color: #fff;
-    border-radius: 100px;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-family: var(--font-inter);
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  
-  .btn__0:hover {
-    background-color: transparent;
-    border:1px solid #1aa912;
-    color: #1aa912;
-  }
-  
-  .btn-container__0 .btn__0 img {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
-  }
-  
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-left: 85px;
+}
+
+.btn__0 {
+  background-color: #136988;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: var(--font-inter);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn__0:hover {
+  background-color: transparent;
+  border:1px solid #1aa912;
+  color: #1aa912;
+}
+
+.btn-container__0 .btn__0 img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
 /*CARDS*/
 .content {
   height: 700px;
